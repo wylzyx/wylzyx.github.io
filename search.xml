@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>进程</title>
+    <url>/2019/12/04/%E8%BF%9B%E7%A8%8B/</url>
+    <content><![CDATA[<p>#进程概念<br>*冯诺依曼体系结构<br>*操作系统层次结构<br>*进程概念<br>*环境变量<br>*程序地址空间<br>*进程优先级<br>##冯诺依曼体系结构<br>*内存<br>*二进制存储数据  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span></pre></td></tr><tr><td class="code"><pre><span class="line">A(输入设备) --&gt; B(储存器：内存)</span></pre></td></tr><tr><td class="code"><pre><span class="line">B --&gt; C(输出设备)</span></pre></td></tr></table></figure>
+
+<p>##操作系统  </p>
+<p>*操作系统 = 操作系统内核 + 一组应用  </p>
+<p>|用户是bash来进行操作，开发|  </p>
+<p>|库函数：strcpy memset|  </p>
+<p>|系统调用|  </p>
+<p>|操作系统内核|  </p>
+<p>|网卡驱动，鼠标驱动|  </p>
+<p>|硬件集合：网卡，cpu，硬盘，内存条|  </p>
+<p>操作系统是一个管理的软件，管理的是计算机的软硬件资源<br>管理 = 描述 + 组织的方式<br>##进程<br>*啥是程序，啥是进程<br>程序就是一个编译完成后的可执行程序，换句话说就是普通文本<br>进程就是程序运行起来的实体  </p>
+<p>*描述进程</p>
+<p>*task_struct –&gt; 进程控制块 –&gt; PCB</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+  </entry>
+  <entry>
     <title>搭建个人博客1.0的心得小结</title>
     <url>/2019/12/03/%E5%BF%83%E5%BE%97%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<p>  经过几天的学习，翻阅大佬的博客，查找有关的文档，简陋的个人博客总算是搭建起来的。万事开头难，刚开始的时候确实会有一点难度，很多指令步骤都稀里糊涂的，不知道为什么，干什么用的，因此也尝试了很多次。在一次次的尝试之后，慢慢的也就了解了整个过程的步骤和原理。<br>  个人博客1.0版本的基本内容都已经配置好了，虽然有些简陋，但相较于原始的主题已经有了很大的改善了，一些必要的东西在今后再慢慢地补充吧。今后的任务就是继续完善博客的配置和维护博客了，使用自己搭建的博客会比使用现成的博客更加有趣，在这个过程中也学习到了很多不一样的东西，今后继续加油吧！</p>

@@ -1057,11 +1057,8 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .site-nav {
-    border-top: 1px solid #ddd;
     clear: both;
     display: none;
-    margin: 0 -10px;
-    padding: 0 10px;
   }
 }
 .site-nav.site-nav-on {
@@ -1202,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffffa8;
+  background: #2fd7a4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1489,6 +1486,16 @@ pre .javascript .function {
     left: 20px;
     opacity: 0.8;
   }
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 3px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 1500;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2404,9 +2411,6 @@ ul.breadcrumb li + li:last-child {
 }
 .site-nav-toggle .toggle .toggle-line {
   background: #fff;
-}
-.site-nav {
-  border-top: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-nav {
