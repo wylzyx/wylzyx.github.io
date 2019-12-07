@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>进程</title>
-    <url>/2019/12/04/%E8%BF%9B%E7%A8%8B/</url>
-    <content><![CDATA[<p>#进程概念<br>*冯诺依曼体系结构<br>*操作系统层次结构<br>*进程概念<br>*环境变量<br>*程序地址空间<br>*进程优先级<br>##冯诺依曼体系结构<br>*内存<br>*二进制存储数据  </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span></pre></td></tr><tr><td class="code"><pre><span class="line">A(输入设备) --&gt; B(储存器：内存)</span></pre></td></tr><tr><td class="code"><pre><span class="line">B --&gt; C(输出设备)</span></pre></td></tr></table></figure>
-
-<p>##操作系统  </p>
-<p>*操作系统 = 操作系统内核 + 一组应用  </p>
-<p>|用户是bash来进行操作，开发|  </p>
-<p>|库函数：strcpy memset|  </p>
-<p>|系统调用|  </p>
-<p>|操作系统内核|  </p>
-<p>|网卡驱动，鼠标驱动|  </p>
-<p>|硬件集合：网卡，cpu，硬盘，内存条|  </p>
-<p>操作系统是一个管理的软件，管理的是计算机的软硬件资源<br>管理 = 描述 + 组织的方式<br>##进程<br>*啥是程序，啥是进程<br>程序就是一个编译完成后的可执行程序，换句话说就是普通文本<br>进程就是程序运行起来的实体  </p>
-<p>*描述进程</p>
-<p>*task_struct –&gt; 进程控制块 –&gt; PCB</p>
+    <title>继承</title>
+    <url>/2019/12/07/%E7%BB%A7%E6%89%BF/</url>
+    <content><![CDATA[<hr>
 ]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>类与对象--上</title>
+    <url>/2019/12/07/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1-%E4%B8%8A/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h1 id="类与对象的初步认知"><a href="#类与对象的初步认知" class="headerlink" title="类与对象的初步认知"></a>类与对象的初步认知</h1><h1 id="类的引入"><a href="#类的引入" class="headerlink" title="类的引入"></a>类的引入</h1><h1 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h1><h1 id="类的作用域"><a href="#类的作用域" class="headerlink" title="类的作用域"></a>类的作用域</h1><h1 id="类的实例化"><a href="#类的实例化" class="headerlink" title="类的实例化"></a>类的实例化</h1><h1 id="类的访问限定符及封装"><a href="#类的访问限定符及封装" class="headerlink" title="类的访问限定符及封装"></a>类的访问限定符及封装</h1><h1 id="类的对象大小的计算"><a href="#类的对象大小的计算" class="headerlink" title="类的对象大小的计算"></a>类的对象大小的计算</h1><h1 id="类成员函数的this指针"><a href="#类成员函数的this指针" class="headerlink" title="类成员函数的this指针"></a>类成员函数的this指针</h1>]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>进程概念</title>
+    <url>/2019/12/04/%E8%BF%9B%E7%A8%8B/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h4 id="冯诺依曼体系结构"><a href="#冯诺依曼体系结构" class="headerlink" title="冯诺依曼体系结构"></a>冯诺依曼体系结构</h4><p> 冯诺依曼：奠定了现代计算机的硬件体系结构</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span></pre></td></tr><tr><td class="code"><pre><span class="line">A(输入设备) --&gt;B(储存器)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    B --&gt; C(输出设备)</span></pre></td></tr><tr><td class="code"><pre><span class="line">	B --&gt; D(中央处理器)</span></pre></td></tr><tr><td class="code"><pre><span class="line">D --&gt; B</span></pre></td></tr></table></figure>
+
+<p>输入设备：键盘,  鼠标，扫描仪,  写板,  网卡</p>
+<p>输出设备：显示器，打印机， 网卡</p>
+<p>存储器：内存</p>
+<p>中央处理器(CPU)：运算器，控制器</p>
+<h4 id="操作系统-OS"><a href="#操作系统-OS" class="headerlink" title="操作系统(OS)"></a>操作系统(OS)</h4><p>操作系统包括：</p>
+<ul>
+<li>内核（进程管理，内存管理，文件管理，驱动管理）</li>
+<li>其他程序（例如函数库，shell程序等） </li>
+</ul>
+<p>操作系统 = 操作系统内核 + 一组应用  </p>
+<p>操作系统是一个管理的软件，管理的是计算机的软硬件资源<br>管理 = 描述 + 组织的方式  </p>
+<h4 id="进程概念"><a href="#进程概念" class="headerlink" title="进程概念"></a>进程概念</h4><p>啥是程序，啥是进程<br>程序就是一个编译完成后的可执行程序，换句话说就是普通文本<br>进程就是程序运行起来的实体  </p>
+<p>描述进程</p>
+<p>task_struct –&gt; 进程控制块 –&gt; PCB</p>
+<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><h4 id="程序地址空间"><a href="#程序地址空间" class="headerlink" title="程序地址空间"></a>程序地址空间</h4><h4 id="进程优先级"><a href="#进程优先级" class="headerlink" title="进程优先级"></a>进程优先级</h4>]]></content>
       <categories>
         <category>Linux</category>
       </categories>
