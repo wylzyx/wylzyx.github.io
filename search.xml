@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>STL</title>
+    <url>/2020/01/05/STL/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>C++内存管理</title>
+    <url>/2020/01/05/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>多态</title>
+    <url>/2020/01/05/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>智能指针</title>
     <url>/2019/12/21/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/</url>
     <content><![CDATA[<h5 id="RAII"><a href="#RAII" class="headerlink" title="RAII"></a>RAII</h5><p>RAII是一种利用对象生命周期来控制程序资源，在对象构造时获取资源，接着控制对资源的访问使之在对象的生命周期内始终保持有效，最后在对象析构的时候释放资源</p>
